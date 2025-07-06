@@ -1,0 +1,16 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+/node_modules
+
+# Production
+/.next/
+/out/
+
+# Local
+.env
+.env*.local
+*.log
+
+# Misc
+.DS_Store
