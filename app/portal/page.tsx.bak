@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-import UploadForm from '@/components/UploadForm';
-import DocumentList from '@/components/DocumentList';
+import UploadForm from '../../components/UploadForm';
+import DocumentList from '../../components/DocumentList';
 
 const DIRECTUS_URL = process.env.NEXT_PUBLIC_DIRECTUS_URL || 'http://localhost:8055';
 const DIRECTUS_TOKEN = process.env.NEXT_PUBLIC_DIRECTUS_TOKEN || 'PpLh4sXlyNo3PeiJu8H5oMGSObdGZEnr';

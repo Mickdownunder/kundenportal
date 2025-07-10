@@ -1,6 +1,5 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import type { SessionStrategy } from "next-auth";
 
 const DIRECTUS_URL = process.env.DIRECTUS_URL;
 const DIRECTUS_TOKEN = process.env.DIRECTUS_TOKEN;
@@ -42,7 +41,7 @@ const authOptions = {
     signIn: '/login',
   },
   session: {
-    strategy: "jwt" as SessionStrategy,
+    strategy: 'jwt',
   },
   callbacks: {
     async jwt({ token, user }) {
